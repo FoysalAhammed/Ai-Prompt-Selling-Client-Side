@@ -24,10 +24,10 @@ const FilterPrompt = ({ totalPrompts, setPrompts }: Props) => {
   };
 
   return (
-    <div className="w-full flex rounded shadow my-5">
+    <div className="w-full flex-wrap justify-start  flex rounded shadow my-5">
       {categories.map((i, index) => (
         <Button
-          className={`h-[32px] px-3 rounded-2xl mr-8 ${
+          className={`h-[32px] mt-5 text-center items-center px-3 rounded-2xl mr-8 ${
             selected === i ? "bg-[#3ab05b]" : "bg-[#2251ac]"
           }`}
           key={index}

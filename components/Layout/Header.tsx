@@ -94,12 +94,30 @@ const Header = ({ user, activeItem,isSellerExist }: Props) => {
           <Link href="/">
             <h1>
               <Link href={"/"}>
-                <h1 className="font-Inter text-3xl cursor-pointer">
+                <h1 className="font-Inter text-xl md:text-3xl xl:text-3xl lg:text-3xl 2xl:text-3xl cursor-pointer">
                   <span className="text-[#64ff4c]">Imaginary</span>AI
                 </h1>
               </Link>
             </h1>
           </Link>
+    
+        </div>
+        <div className="flex items-center ml-10">
+          <AiOutlineSearch className="text-[25px] mr-5 cursor-pointer" />
+          {user ? (
+            <div>
+              <DropDown
+                user={user}
+                setOpen={setOpen}
+                handleProfile={handleProfile}
+                isSellerExist={isSellerExist}
+              />
+            </div>
+          ) : (
+            <Link href="/sign-in">
+              <CgProfile className="text-[25px] cursor-pointer" />
+            </Link>
+          )}
         </div>
         <div>
           <FaBars
