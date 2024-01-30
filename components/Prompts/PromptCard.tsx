@@ -63,7 +63,7 @@ const PromptCard = ({ prompt }: Props) => {
       <div className="w-full flex items-center justify-between">
         <div className="flex items-center">
           <Avatar src={prompt?.shop?.avatar} />
-          <span className={`${styles.label} pl-3`}>@{prompt?.shop?.name}</span>
+          <span className={`${styles.label} pl-3`}>{prompt?.shop?.name}</span>
         </div>
         <Ratings rating={prompt?.rating} />
       </div>

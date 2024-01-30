@@ -22,7 +22,7 @@ const SellerCard = ({ item, loading }: Props) => {
       ) : (
         <>
           <Avatar src={item?.avatar} className="w-[80px] h-[80px]" />
-          <span className={`${styles.label} py-2 text-xl`}>@{item?.name}</span>
+          <span className={`${styles.label} py-2 text-xl`}>{item?.name}</span>
           <div className="flex items-center">
             <span className={`${styles.label} pr-2`}>{item?.ratings}/5</span>
             <Ratings rating={item?.ratings} />
