@@ -4,9 +4,8 @@ import { getUser } from "@/actions/user/getUser";
 
 const Page = async () => {
   const data = await getUser();
-  console.log(data);
   return (
-    <div>
+    <div className="">
       <RoutePage
         user={data?.user}
         isSellerExist={data?.shop ? true : false}

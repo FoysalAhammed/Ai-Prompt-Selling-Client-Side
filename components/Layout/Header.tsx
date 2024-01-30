@@ -95,7 +95,7 @@ const Header = ({ user, activeItem,isSellerExist }: Props) => {
             <h1>
               <Link href={"/"}>
                 <h1 className="font-Inter text-3xl cursor-pointer">
-                  <span className="text-[#64ff4c]">Co</span>demy
+                  <span className="text-[#64ff4c]">Imaginary</span>AI
                 </h1>
               </Link>
             </h1>

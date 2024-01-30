@@ -28,6 +28,7 @@ const PromptDetailsPage = ({
   const [prompt, setPrompt] = useState<propmt>();
   const [loading, setLoading] = useState(true);
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const fetchPromptData = async () => {
     setLoading(true);
     try {
@@ -43,7 +44,7 @@ const PromptDetailsPage = ({
 
   useEffect(() => {
     fetchPromptData();
-  }, []);
+  }, [fetchPromptData]);
 
   useEffect(() => {
     if (!isMounted) {

@@ -30,7 +30,7 @@ const navItems = [
 
 const Navigation = ({ activeItem }: Props) => {
   return (
-    <div className="block md:flex">
+    <div className=" grid md:flex">
       {navItems.map((item, index) => (
         <Link key={item.title} href={item.href}>
           <h5

@@ -8,16 +8,16 @@ type Props = {};
 const Footer = (props: Props) => {
   return (
     <div className="mt-8">
-      <div className="w-full mb-5 flex justify-between items-center">
+      <div className="w-full text-center mb-5 flex justify-center xl:justify-between  2xl:justify-between lg:justify-between  md:justify-between items-center">
         <div>
           <Link href={"/"}>
             <h1 className="font-Inter text-3xl cursor-pointer">
-              <span className="text-[#64ff4c]">Bec</span>odemy
+              <span className="text-[#64ff4c]">Imaginary</span>AI
             </h1>
           </Link>
         </div>
         <div>
-          <ul className="flex items-center flex-wrap">
+          <ul className="md:flex  xl:flex lg:flex 2xl:flex hidden items-center flex-wrap">
             <li>
               <Link
                 href="/"

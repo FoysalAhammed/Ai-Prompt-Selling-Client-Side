@@ -64,7 +64,7 @@ const RoutePage = ({ user, isSellerExist }: Props) => {
           width={120}
           height={120}
           alt=""
-          className="absolute right-[-30px]"
+          className="absolute right-[0px]"
         />
         <br />
         <div className="w-[95%] md:w-[90%] xl:w-[80%] 2xl:w-[75%] m-auto">
