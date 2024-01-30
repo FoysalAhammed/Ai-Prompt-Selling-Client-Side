@@ -44,7 +44,7 @@ const PromptInformation = ({ promptData }: Props) => {
                         <span
                           className={`${styles.label} pl-3 !text-xl text-white`}
                         >
-                          @{promptData?.shop?.name}
+                          {promptData?.shop?.name}
                         </span>
                         <br />
                         <span className={`${styles.label} pl-3`}>
