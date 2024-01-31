@@ -73,3 +73,12 @@ body {
 .sellers-banner {
   background: linear-gradient(132deg, #5fec46 0%, #46e695 100%);
 }
+
+.mobilenavbg{
+  background-color: #65ff4b;
+  background-image: linear-gradient(132deg, #65ff4b 0%, #46e695 100%);
+  box-shadow: -10px 0 15px rgba(0, 0, 0, 0.1);
+}
+.cl-internal-b3fm6y{
+  display: none;
+}

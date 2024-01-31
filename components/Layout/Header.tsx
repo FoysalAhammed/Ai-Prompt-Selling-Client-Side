@@ -89,7 +89,7 @@ const Header = ({ user, activeItem,isSellerExist }: Props) => {
       )}
 
       {/* for mobile screen */}
-      <div className="w-full md:hidden flex items-center justify-between">
+      <div className="w-full  md:hidden flex items-center justify-between">
         <div>
           <Link href="/">
             <h1>
@@ -132,7 +132,7 @@ const Header = ({ user, activeItem,isSellerExist }: Props) => {
             onClick={handleClose}
             id="screen"
           >
-            <div className="fixed bg-black h-screen top-0 right-0 w-[60%] z-[9999]">
+            <div className="fixed  mobilenavbg h-screen top-0 right-0 w-[60%] z-[9999]">
               <div className="mt-20 p-5">
                 <Navigation activeItem={activeItem} />
                 {user && (

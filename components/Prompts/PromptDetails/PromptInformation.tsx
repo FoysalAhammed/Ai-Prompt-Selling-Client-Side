@@ -39,7 +39,7 @@ const PromptInformation = ({ promptData }: Props) => {
                 {item.title === "Author" && (
                   <>
                     <div className="flex w-full my-2">
-                      <Avatar size="lg" src={promptData?.shop?.avatar} />
+                      <Avatar className="border-2 border-[#6dff4b]" size="lg" src={promptData?.shop?.avatar} />
                       <div>
                         <span
                           className={`${styles.label} pl-3 !text-xl text-white`}

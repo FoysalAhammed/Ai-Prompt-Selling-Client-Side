@@ -14,6 +14,7 @@ import Footer from "@/components/Layout/Footer";
 import { Divider } from "@nextui-org/react";
 import { User } from "@clerk/nextjs/server";
 import PromptCardLoader from "@/utils/PromptCardLoader";
+import Aitools from "@/components/Route/Aitools";
 
 type Props = {
   user: User | undefined;
@@ -67,7 +68,7 @@ const RoutePage = ({ user, isSellerExist }: Props) => {
           className="absolute right-[0px]"
         />
         <br />
-        <div className="w-[95%] md:w-[90%] xl:w-[80%] 2xl:w-[75%] m-auto">
+        <div className="w-[95%] md:w-[95%] xl:w-[95%] 2xl:w-[90%] m-auto">
           <About />
           <div>
             <h1 className={`${styles.heading} p-2 font-Monserrat`}>
@@ -92,6 +93,7 @@ const RoutePage = ({ user, isSellerExist }: Props) => {
             <br />
             <BestSellers />
             <Future />
+            <Aitools/>
             <Partners />
             <SellersBanner />
             <br />

@@ -60,10 +60,10 @@ const PromptCard = ({ prompt }: Props) => {
         <p className={`${styles.paragraph}`}>${prompt?.price}</p>
       </div>
       <Divider className="bg-[#ffffff18] my-3" />
-      <div className="w-full flex items-center justify-between">
+      <div className="flex items-center justify-between">
         <div className="flex items-center">
-          <Avatar src={prompt?.shop?.avatar} />
-          <span className={`${styles.label} pl-3`}>{prompt?.shop?.name}</span>
+          <Avatar className="border-2 border-[#16c252]" src={prompt?.shop?.avatar} />
+          <span className={`${styles.label} pl-3 text-[12px]`}>{prompt?.shop?.name}</span>
         </div>
         <Ratings rating={prompt?.rating} />
       </div>

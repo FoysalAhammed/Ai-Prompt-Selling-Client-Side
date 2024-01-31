@@ -8,14 +8,14 @@ type Props = {};
 
 const Future = (props: Props) => {
   return (
-    <div className="w-full relative p-4 md:p-[unset] grid md:grid-cols-2 py-8">
+    <div className="w-full gap-7 items-center h-[80vh] relative p-4 md:p-[unset] grid lg:grid-cols-2 2xl:grid-cols-2 xl:grid-cols-2 md:grid-cols-2 py-8">
       <div className="col-span-1">
         <Image
           src={"https://pixner.net/aikeu/assets/images/tools-thumb.png"}
           width={800}
           height={500}
           alt=""
-          className="md:w-[90%] md:ml-[-50px] 2xl:ml-[-90px]"
+          className="md:w-[100%] "
         />
       </div>
       <div className="col-span-1 w-full flex justify-center items-center">

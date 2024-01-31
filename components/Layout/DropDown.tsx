@@ -29,14 +29,13 @@ const DropDown = ({ user, setOpen, handleProfile, isSellerExist }: Props) => {
     await signOut();
     router.push("/sign-in");
   };
-  console.log(isSellerExist);
   return (
     <Dropdown placeholder="bottom-start" className="bg-white">
       <DropdownTrigger>
         <Avatar
           src={user?.imageUrl}
           alt=""
-          className="w-[40px] h-[40px] cursor-pointer"
+          className="w-[40px] border-2 border-[#6dff4b] h-[40px] cursor-pointer"
         />
       </DropdownTrigger>
       <DropdownMenu aria-label="Profile Actions" variant="flat">
@@ -46,11 +45,11 @@ const DropDown = ({ user, setOpen, handleProfile, isSellerExist }: Props) => {
             setOpen(false);
           }}
         >
-          <div className="flex w-full items-center">
+          <div className="flex  w-full items-center">
             <Avatar
               src={user?.imageUrl}
               alt=""
-              className="w-[30px] h-[30px] cursor-pointer"
+              className="w-[30px] border-2 border-[#6dff4b] h-[30px] cursor-pointer"
             />
             <span className={`${styles.label} text-black text-[16px] pl-2`}>
               My Profile

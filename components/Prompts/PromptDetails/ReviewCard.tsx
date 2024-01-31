@@ -7,7 +7,7 @@ const ReviewCard = ({ item }: { item: any }) => {
   return (
     <div className="flex md:flex xl:flex lg:flex 2xl:flex my-2">
       <div>
-        <Avatar size="lg" src={item?.user?.profileImageUrl} />
+        <Avatar className="border-2 border-[#16c252]" size="lg" src={item?.user?.profileImageUrl} />
       </div>
       <div className="pl-3">
         <div className="flex items-center">
